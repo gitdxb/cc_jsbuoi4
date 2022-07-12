@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài Tập buổi 2-3</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand h" href="#">Bài tập JS Buổi 4</a>
+        </div>
+    </nav>
+  <section class="project container py-1 my-5">
+    <!-- tab menu -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="bai-1" data-toggle="tab" href="#bai1" role="tab" aria-controls="Bài 1" aria-selected="true">📒 Bài 1</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="bai-2" data-toggle="tab" href="#bai2" role="tab" aria-controls="Bài 2" aria-selected="false">📒 Bài 2</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="bai-3" data-toggle="tab" href="#bai3" role="tab" aria-controls="Bài 3" aria-selected="false">📒 Bài 3</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="bai-4" data-toggle="tab" href="#bai4" role="tab" aria-controls="Bài 4" aria-selected="false">📒 Bài 4</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="bai-5" data-toggle="tab" href="#bai5" role="tab" aria-controls="Bài 5" aria-selected="false">📒 Bài 5</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="bai-6" data-toggle="tab" href="#bai6" role="tab" aria-controls="Bài 6" aria-selected="false">📒 Bài 6</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="bai-7" data-toggle="tab" href="#bai7" role="tab" aria-controls="Bài 7" aria-selected="false">📒 Bài 7</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="bai-8" data-toggle="tab" href="#bai8" role="tab" aria-controls="Bài 8" aria-selected="false">📒 Bài 8</a>
+        </li>
+      </ul>
+      
+      <div class="tab-content">
+        <!-- Bai 1 -->
+        <div class="tab-pane active" id="bai1" role="tabpanel" aria-labelledby="bai-1">
+            <div class="col-6 py-5 my-2">
+                <h2>📚 Xuất 3 số theo thứ tự tăng dần</h2>
+                <form>
+                  <div class="form-group">
+                    <input type="number" class="form-control" id="soThu1" placeholder="Nhập số thứ 1">
+                  </div>
+                  <div class="form-group">
+                    <input type="number" class="form-control" id="soThu2" placeholder="Nhập số thứ 2">
+                  </div>
+                  <div class="form-group">
+                    <input type="number" class="form-control" id="soThu3" placeholder="Nhập số thứ 3">
+                  </div>
+                  <button id="btnBai1" type="button" class="btn btn-success">Kết quả</button>
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kqBai1"></span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Bai 2 -->
+        <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="bai-2">
+            <div class="col-6 py-5 my-2">
+                <h2>👋 Chương trình "Chào hỏi"</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="so1">Số 1</label>
+                    <input type="number" class="form-control" id="so1">
+                  </div>
+                  <div class="form-group">
+                    <label for="so2">Số 2</label>
+                    <input type="number" class="form-control" id="so2">
+                  </div>
+                  <div class="form-group">
+                    <label for="so3">Số 3</label>
+                    <input type="number" class="form-control" id="so3">
+                  </div>
+                  <div class="form-group">
+                    <label for="so4">Số 4</label>
+                    <input type="number" class="form-control" id="so4">
+                  </div>
+                  <div class="form-group">
+                    <label for="so5">Số 5</label>
+                    <input type="number" class="form-control" id="so5">
+                  </div>
+                  <button id="btnDTB" type="button" class="btn btn-success">Tính</button>
+        
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="soTrungBinh"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 3 -->
+        <div class="tab-pane fade show" id="bai3" role="tabpanel" aria-labelledby="bai-3">
+            <div class="col-6 py-5 my-2">
+                <h2>🧮 Đếm số chẵn lẻ</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="soTienUSD">Số tiền cần đổi (USD)</label>
+                    <input type="number" class="form-control" id="soTienUSD" placeholder="Nhập số tiền ở đây">
+                  </div>
+                  <button id="btnDoiTien" type="button" class="btn btn-success">Tính</button>
+        
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="soTienVND"></span><span> VND</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 4 -->
+        <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="bai-4">
+            <div class="col-6 py-5 my-2">
+                <h2>🔮 Đoán hình tam giác</h2>
+                <ul>
+                  <li>Diện tích: dài x rộng</li>
+                  <li>Chu vi: (dài + rộng) x 2</li>
+                </ul>
+                <form>
+                  <div class="form-group">
+                    <label for="chieuDai">Chiều dài</label>
+                    <input type="number" class="form-control" id="chieuDai">
+                  </div>
+                  <div class="form-group">
+                    <label for="chieuRong">Chiều Rộng</label>
+                    <input type="number" class="form-control" id="chieuRong">
+                  </div>
+                  <button id="btnHCN" type="button" class="btn btn-success">Tính</button>
+        
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kqChuVi"></span><span id="kqDienTich"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 5 -->
+        <div class="tab-pane fade" id="bai5" role="tabpanel" aria-labelledby="bai-5">
+            <div class="col-6 py-5 my-2">
+                <h2>📅 Tính ngày tháng năm</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="nhapSo">Nhập số có 2 chữ số</label>
+                    <input type="number" class="form-control" id="nhapSo">
+                  </div>
+                  <button id="btnTinhTong" type="button" class="btn btn-success">Tính</button>
+        
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kq2ChuSo"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 6 -->
+        <div class="tab-pane fade" id="bai6" role="tabpanel" aria-labelledby="bai-6">
+            <div class="col-6 py-5 my-2">
+                <h2>🗓️ Tính ngày</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="nhapSo">Nhập số có 2 chữ số</label>
+                    <input type="number" class="form-control" id="nhapSo">
+                  </div>
+                  <button id="btnTinhTong" type="button" class="btn btn-success">Tính</button>
+        
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kq2ChuSo"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 7 -->
+        <div class="tab-pane fade" id="bai7" role="tabpanel" aria-labelledby="bai-7">
+            <div class="col-6 py-5 my-2">
+                <h2>🔢 Đọc số</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="nhapSo">Nhập số có 2 chữ số</label>
+                    <input type="number" class="form-control" id="nhapSo">
+                  </div>
+                  <button id="btnTinhTong" type="button" class="btn btn-success">Tính</button>
+        
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kq2ChuSo"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bai 8 -->
+        <div class="tab-pane fade" id="bai8" role="tabpanel" aria-labelledby="bai-8">
+            <div class="col-6 py-5 my-2">
+                <h2>🗺️ Tìm sinh viên xa trường nhất</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="nhapSo">Nhập số có 2 chữ số</label>
+                    <input type="number" class="form-control" id="nhapSo">
+                  </div>
+                  <button id="btnTinhTong" type="button" class="btn btn-success">Tính</button>
+        
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kq2ChuSo"></span>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <script>
+        $(function () {
+          $('#myTab li:last-child a').tab('show')
+        })
+      </script>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
