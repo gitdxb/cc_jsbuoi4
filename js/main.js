@@ -1,5 +1,6 @@
 // Bài 1 📚 Xuất 3 số theo thứ tự tăng dần
 // Biến số nguyên a, b, c
+// Xử lý khi 2 hoặc 3 số bằng nhau
 function xepSoTangDan() {
     var a = Number(document.getElementById("soThu1").value);
     var b = Number(document.getElementById("soThu2").value);
@@ -22,6 +23,17 @@ function xepSoTangDan() {
 document.getElementById("btnBai1").onclick = xepSoTangDan;
 
 // Bài 2 👋 Chương trình "Chào hỏi"
+function chaoHoi() {
+    var select = document.getElementById('chonThanhVien');
+    var option = select.options[select.selectedIndex].innerHTML;
+    if (option != "Chọn thành viên") {
+        document.getElementById("kqBai2").innerHTML = "Xin chào " + option + " !";
+    } else {
+        document.getElementById("kqBai2").innerHTML = "Thành viên này không tồn tại";
+    }
+    
+}
+document.getElementById("btnBai2").onclick = chaoHoi;
 
 // Bài 3 🧮 Đếm số chẵn lẻ
 

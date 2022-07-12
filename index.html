@@ -49,7 +49,7 @@
       </ul>
       
       <div class="tab-content">
-        <!-- Bai 1 -->
+        <!-- Bai 1 NOT YET -->
         <div class="tab-pane active" id="bai1" role="tabpanel" aria-labelledby="bai-1">
             <div class="col-6 py-5 my-2">
                 <h2>📚 Xuất 3 số theo thứ tự tăng dần</h2>
@@ -72,36 +72,24 @@
             </div>
         </div>
 
-        <!-- Bai 2 -->
+        <!-- Bai 2 DONE -->
         <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="bai-2">
             <div class="col-6 py-5 my-2">
                 <h2>👋 Chương trình "Chào hỏi"</h2>
-                <form>
-                  <div class="form-group">
-                    <label for="so1">Số 1</label>
-                    <input type="number" class="form-control" id="so1">
+                <div class="form-group">
+                    <select id="chonThanhVien" class="form-control" name="">
+                      <option selected>Chọn thành viên</option>
+                      <option value="B">Bố</option>
+                      <option value="M">Mẹ</option>
+                      <option value="AT">Anh Trai</option>
+                      <option value="EM">Em Gái</option>
+                    </select>
                   </div>
-                  <div class="form-group">
-                    <label for="so2">Số 2</label>
-                    <input type="number" class="form-control" id="so2">
-                  </div>
-                  <div class="form-group">
-                    <label for="so3">Số 3</label>
-                    <input type="number" class="form-control" id="so3">
-                  </div>
-                  <div class="form-group">
-                    <label for="so4">Số 4</label>
-                    <input type="number" class="form-control" id="so4">
-                  </div>
-                  <div class="form-group">
-                    <label for="so5">Số 5</label>
-                    <input type="number" class="form-control" id="so5">
-                  </div>
-                  <button id="btnDTB" type="button" class="btn btn-success">Tính</button>
+                  <button id="btnBai2" type="button" class="btn btn-success">Kết quả</button>
         
                 </form>
                 <div class="alert alert-info my-3">
-                    <span>👉🏿 </span><span id="soTrungBinh"></span>
+                    <span>👉🏿 </span><span id="kqBai2"></span>
                 </div>
             </div>
         </div>
@@ -111,16 +99,20 @@
             <div class="col-6 py-5 my-2">
                 <h2>🧮 Đếm số chẵn lẻ</h2>
                 <form>
-                  <div class="form-group">
-                    <label for="soTienUSD">Số tiền cần đổi (USD)</label>
-                    <input type="number" class="form-control" id="soTienUSD" placeholder="Nhập số tiền ở đây">
+                    <div class="form-group">
+                      <input type="number" class="form-control" id="soThu1_b3" placeholder="Nhập số thứ 1">
+                    </div>
+                    <div class="form-group">
+                      <input type="number" class="form-control" id="soThu2_b3" placeholder="Nhập số thứ 2">
+                    </div>
+                    <div class="form-group">
+                      <input type="number" class="form-control" id="soThu3_b3" placeholder="Nhập số thứ 3">
+                    </div>
+                    <button id="btnBai3" type="button" class="btn btn-success">Kết quả</button>
+                  </form>
+                  <div class="alert alert-info my-3">
+                      <span>👉🏿 </span><span id="kqBai3"></span>
                   </div>
-                  <button id="btnDoiTien" type="button" class="btn btn-success">Tính</button>
-        
-                </form>
-                <div class="alert alert-info my-3">
-                    <span>👉🏿 </span><span id="soTienVND"></span><span> VND</span>
-                </div>
             </div>
         </div>
 
