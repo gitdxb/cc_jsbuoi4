@@ -36,9 +36,42 @@ function chaoHoi() {
 document.getElementById("btnBai2").onclick = chaoHoi;
 
 // Bài 3 🧮 Đếm số chẵn lẻ
-
+function demChanLe() {
+    var soChan = 0;
+    var soLe = 0;
+    var soThu1 = Number(document.getElementById("soThu1_b3").value);
+    var soThu2 = Number(document.getElementById("soThu2_b3").value);
+    var soThu3 = Number(document.getElementById("soThu3_b3").value);
+    if (soThu1 % 2 == 0) {
+        soChan += 1;
+    }
+    if (soThu2 % 2 == 0) {
+        soChan += 1;
+    }
+    if (soThu3 % 2 == 0) {
+        soChan += 1;
+    }
+    soLe = 3 - soChan;
+    document.getElementById("kqBai3").innerHTML = "Số lẻ: " + soLe + " | Số chẵn: " + soChan;
+}
+document.getElementById("btnBai3").onclick = demChanLe;
 // Bài 4 🔮 Đoán hình tam giác
+function doanTamGiac() {
+    var canh_1 = Number(document.getElementById("canh1").value);
+    var canh_2 = Number(document.getElementById("canh2").value);
+    var canh_3 = Number(document.getElementById("canh3").value);
 
+    if (canh_1 == canh_2 && canh_2 == canh_3) {
+        document.getElementById("kqBai4").innerHTML = "Tam giác đều";
+    } else if (canh_1 == canh_2){
+        document.getElementById("kqBai4").innerHTML = "Tam giác cân";
+    } else if ((canh_1 ** 2) + (canh_2 ** 2) == (canh_3 ** 2)) {
+        document.getElementById("kqBai4").innerHTML = "Tam giác vuông";
+    } else {
+        document.getElementById("kqBai4").innerHTML = "Tam giác khác";
+    }
+}
+document.getElementById("btnBai4").onclick = doanTamGiac;
 // Bài 5 📅 Tính ngày tháng năm
 
 // Bài 6 🗓️ Tính ngày

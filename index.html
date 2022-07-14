@@ -94,7 +94,7 @@
             </div>
         </div>
 
-        <!-- Bai 3 -->
+        <!-- Bai 3 DONE-->
         <div class="tab-pane fade show" id="bai3" role="tabpanel" aria-labelledby="bai-3">
             <div class="col-6 py-5 my-2">
                 <h2>🧮 Đếm số chẵn lẻ</h2>
@@ -116,28 +116,30 @@
             </div>
         </div>
 
-        <!-- Bai 4 -->
+        <!-- Bai 4 DONE-->
         <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="bai-4">
             <div class="col-6 py-5 my-2">
                 <h2>🔮 Đoán hình tam giác</h2>
                 <ul>
-                  <li>Diện tích: dài x rộng</li>
-                  <li>Chu vi: (dài + rộng) x 2</li>
+                  <li>Đều: Nếu 3 cạnh bằng nhau. Vd:a = 3, b=3 c=3</li>
+                  <li>Cân: Nếu 2 cạnh bằng nhau. Vd: a=2, b=2, c=1</li>
+                  <li>Vuông: c^2 = a^2 + b^2. Vd: a=3, b=4, c=5</li>
                 </ul>
                 <form>
                   <div class="form-group">
-                    <label for="chieuDai">Chiều dài</label>
-                    <input type="number" class="form-control" id="chieuDai">
+                    <input type="number" class="form-control" id="canh1" placeholder="Nhập độ dài cạnh 1">
                   </div>
                   <div class="form-group">
-                    <label for="chieuRong">Chiều Rộng</label>
-                    <input type="number" class="form-control" id="chieuRong">
+                    <input type="number" class="form-control" id="canh2" placeholder="Nhập độ dài cạnh 2">
                   </div>
-                  <button id="btnHCN" type="button" class="btn btn-success">Tính</button>
+                  <div class="form-group">
+                    <input type="number" class="form-control" id="canh3" placeholder="Nhập độ dài cạnh 3">
+                  </div>
+                  <button id="btnBai4" type="button" class="btn btn-success">Kết quả</button>
         
                 </form>
                 <div class="alert alert-info my-3">
-                    <span>👉🏿 </span><span id="kqChuVi"></span><span id="kqDienTich"></span>
+                    <span>👉🏿 </span><span id="kqBai4"></span>
                 </div>
             </div>
         </div>
