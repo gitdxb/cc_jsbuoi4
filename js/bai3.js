@@ -1,4 +1,19 @@
 // Bài 3 🧮 Đếm số chẵn lẻ
+/**
+ * Khối 1: input
+ * Nhập 3 số bất kỳ
+ * 
+ * Khối 2: các bước xử lý
+ * B1: Nhập 3 số bất kỳ và lưu vào biến
+ * B2: So sánh từng số liệu có chia hết cho 2 => số chẵn
+ * B3: Lấy 3 trừ đi số số chẵn ở B2 để lấy số lẻ
+ * B4: Hiển thị kết quả ra màn hình UI
+ * 
+ * 
+ * Khối 3: Output
+ * Tính ra số số chẵn, số lẻ
+ * In kết quả ra giao diện UI
+ */
 function demChanLe() {
     var soChan = 0;
     var soLe = 0;

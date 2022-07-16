@@ -1,4 +1,19 @@
 // Bài 7 🔢 Đọc số
+/**
+ * Khối 1: input
+ * Input số có 3 chữ số bất kỳ
+ * 
+ * Khối 2: các bước xử lý
+ * B1: nhận giá trị qua form và lưu vào biến
+ * B2: Kiểm tra giá trị input hợp lệ
+ * B3: Tách ra lấy số hàng trăm, chục, đơn vị
+ * B4: Chuyển các số sang chữ số tương đương
+ * B5: Ghép các số lại và in kết quả
+ * 
+ * Khối 3: output
+ * In ra giao diện kết quả số 3 chữ số sang dạng chữ
+ * 
+ */
 function docSo() {
     var num = Number(document.getElementById("nhapSo3ChuSo").value);
 

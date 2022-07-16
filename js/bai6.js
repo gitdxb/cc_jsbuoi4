@@ -1,4 +1,17 @@
 // Bài 6 🗓️ Tính ngày
+/**
+ * Khối 1: input
+ * Nhập giá trị tháng, năm
+ * 
+ * Khối 2: các bước xử lý
+ * B1: Lưu giá trị vào form và lưu vào biến tháng, năm
+ * B2: Xác định năm nhuận và số ngày cho tháng 2
+ * B3: Xử lý trường hợp tháng 2 thông thường và các tháng có 31 hay 30 ngày
+ * B4: In kết quả ra giao diện UI
+ * 
+ * Khối 3:
+ * In số ngày ra giao diện
+ */
 function tinhNgay() {
     var thang = Number(document.getElementById("nhapThang").value);
     var nam = Number(document.getElementById("nhapNam").value);

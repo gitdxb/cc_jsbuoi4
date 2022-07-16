@@ -1,6 +1,20 @@
 // Bài 1 📚 Xuất 3 số theo thứ tự tăng dần
-// Biến số nguyên a, b, c
-// Xử lý khi 2 hoặc 3 số bằng nhau
+/**
+ * Khối 1: Input 
+ * Các biến số thứ tự a, b, c
+ * 
+ * 
+ * Khối 2: Các bước xử lý:
+ * B1: lấy giá trị từ form và lưu vào biến a, b, c
+ * B2: Xét 2 trường hợp
+ *      1. 1 trong 2 biến có giá trị bằng nhau, nếu 2 biến giống nhau có giá trị lớn hơn, và 2 biến giá trị nhỏ hơn
+ *      2. Trường hợp thông thường khi ko có biến nào trùng nhau
+ * B3: hiển thị kết quả lên UI
+ * 
+ * Khối 3: Output
+ * In kết quả ra UI 3 số thứ tự tăng dần
+ * 
+ */
 function xepSoTangDan() {
     var a = Number(document.getElementById("soThu1").value);
     var b = Number(document.getElementById("soThu2").value);
